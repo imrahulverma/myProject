@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-6 col-md-3"  *ngFor="let item of videoList">
+           <div class="card border-0" style="cursor: pointer;">
+            <div class="thumbnail-img">
+                <img [src]="item?.thumbnail"  alt="">
+            </div>
+            <div class="title mt-3">
+                <p class="mb-1">{{item?.title}}</p>
+                <p class="text-grey">{{item.views}} views</p>
+            </div>
+           </div>
+        </div>
+    </div>
+</div>

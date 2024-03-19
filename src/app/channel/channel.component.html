@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row ">
+        <div class="col-12 my-3">
+            <div class="banner">
+                <img [src]="channelData?.coverImage"
+                    alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row">
+              
+                <div class="col-12 d-flex align-items-center">
+                    <div class="dp">
+                        <img [src]="channelData?.avatar"
+                            alt="" srcset="" width="175" height="175">
+                    </div>
+                    <div class="ms-4">
+                        <h2> <b> {{channelData?.fullName}}</b></h2>
+                    <p class="text-grey">{{channelData?.username}}
+                        ‧
+                        {{channelData?.subscribersCount}} subscribers
+                        ‧
+                        0 videos</p>
+                        <p class="text-grey">{{channelData?.description}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-4 ">
+          <mat-tab-group mat-stretch-tabs="false" animationDuration="0ms" mat-align-tabs="start">
+            <mat-tab label="videos" > <app-videos></app-videos> </mat-tab>
+            <mat-tab label="Playlist" > <app-playlist></app-playlist> </mat-tab>
+            <mat-tab label="Tweets"> <app-tweets></app-tweets></mat-tab>
+          </mat-tab-group>
+    </div>
+   
+</div>
+

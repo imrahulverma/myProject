@@ -1,0 +1,9 @@
+.thumbnail-img {
+    height: 150px;
+
+}
+.thumbnail-img img{
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+}

@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.font-13{
+    font-size: 13px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+      background-color: gray;
+  }
+  
+  header {
+    background-color:#272727;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 70px;
+  }
+  
+  #leftHeader {
+    display: flex;
+    gap: 15px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #logoIcon {
+    width: auto;
+    height: 25px;
+    min-width: 70px;
+  }
+  
+  #centerHeader {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #searchField {
+    background-color:#272727;
+    height: 40px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  input {
+    width:90%;
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #272727;
+    padding-left: 10px;
+    outline-color: blue;
+    font-size: 17px;
+    background-color: #272727;
+  }
+  
+  #searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    min-width: 50px;
+  }
+  
+  #rightHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #createIcon {
+    margin-left: 20px;
+  }
+  
+  #notificationIcon, #createIcon, #voiceIcon, #hamburIcon {
+    border-radius: 50%;
+    background-color: #272727;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #notificationIcon:hover , #createIcon:hover , #voiceIcon:hover , #hamburIcon:hover  {
+      background-color: rgba(100, 100, 100, 0.5)
+  }
+  
+  #profileIcon img {
+    border-radius: 50%;
+  }
+  
+  span {
+    cursor: pointer;
+  }
+  
+  aside {
+    background-color: #272727;
+    width: 85px;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+  }
+  aside span {
+    color: white;
+    font-size: 12px;
+  }
+  
+  aside div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+    margin-top: 20px;
+    /* margin-left: 5px; */
+    width: 100%;
+      padding: 8px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  aside div:hover {
+      background-color: #272727;
+  }
+  .content-wrapper{
+    display: flex;
+  }
+  
+  @media (min-width: 481px) {
+      /* aside {
+      height: 100%;
+      padding-bottom: 100%;
+    } */
+  }
+  
+  @media (max-width: 480px) {
+    input {
+      display: none;
+    }
+    #centerHeader {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      border: none;
+      
+    }
+    #searchField {
+      background-color:#272727;
+      width: 40px;
+      border: none;
+      margin-right: 20px;
+    }
+    
+    #searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    margin-right: 20px;
+  }
+    #voiceIcon {
+      display: none;
+  /*   min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    }
+    #profileIcon {
+      display: none;
+    }
+    
+    #notificationIcon, #createIcon, #voiceIcon, #hamburIcon, #searchIcon {
+      width: 25px;
+      height: 25px;
+      background-color: #272727;
+    }
+    aside {
+      height: 100%;
+      padding-bottom: 100%;
+    }
+    
+  }
+  
+  @media (max-width: 360px) {
+    #voiceIcon {
+      display: none;
+    }
+    #createIcon {
+    margin-left: 0;
+  }
+ 
+  
+  }
