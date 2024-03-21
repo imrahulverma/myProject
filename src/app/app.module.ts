@@ -19,6 +19,7 @@ import { TweetsComponent } from './tweets/tweets.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { VideoDetailComponent } from './video-detail/video-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     VideosComponent,
     PlaylistComponent,
     TweetsComponent,
+    VideoDetailComponent,
     
   ],
   imports: [
